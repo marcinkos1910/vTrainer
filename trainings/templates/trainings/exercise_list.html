@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Exercise{% endblock %}
+{% block content %}
+    <ul>
+        {% for exercise in exercises %}
+            <li>{{ exercise }}</li>
+        {% empty %}
+        {% endfor %}
+    </ul>
+{% endblock %}
